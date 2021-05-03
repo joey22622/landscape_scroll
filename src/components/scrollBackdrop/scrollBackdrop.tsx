@@ -44,7 +44,6 @@ const ScrollBackdrop = () => {
         }
 
         let row = {} as Row
-        console.log(row)
         row.color = hexToRgba(color.color, color.alpha)
         row.alpha = color.alpha
         spectrum.push(row)
@@ -101,9 +100,11 @@ const ScrollBackdrop = () => {
       ] = `rgba(${current['r']},${current['g']},${current['b']},${current['a']})`
       newFills.push(newFill)
     })
-
     setFills(newFills)
   }
+  useEffect(() => {
+    handleFill()
+  }, [])
   useEffect(() => {
     refContainer.current.focus()
     fills.map(fill => {
@@ -123,7 +124,7 @@ const ScrollBackdrop = () => {
   return (
     <>
       <div ref={refContainer} className='scroll-backdrop'>
-        <Svg></Svg>
+        <Svg />
       </div>
     </>
   )

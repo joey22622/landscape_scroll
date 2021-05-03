@@ -1,0 +1,11 @@
+@import 'universal/universal.scss';
+
+html {
+  font-family: sans-serif;
+  font-family: brother-1816, sans-serif;
+}
+html,
+body {
+  margin: 0;
+  color: $color__body-text;
+}

@@ -1,0 +1,31 @@
+@import 'universal/universal.scss';
+
+.site-header{
+    position: fixed;
+    width: 100%;
+    p,h1{
+        font-size: 2rem;
+        font-weight: 400;
+    }
+    display: flex;
+    background: $color__head;
+    color: $color__head-text;
+
+    nav{
+        ul{
+            list-style-type: none;
+            display: flex;
+
+            li{
+                margin-right: 1rem;
+                &:last-child{
+                    margin-right: 0;
+                }
+               
+            }
+        }
+        a{
+            color: $color__head-text;
+        }
+    }
+}

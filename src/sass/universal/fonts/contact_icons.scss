@@ -1,0 +1,39 @@
+@font-face {
+  font-family: 'contact_icons';
+  src:  url('../fonts/contact_icons/contact_icons.eot?sj4e5c');
+  src:  url('../fonts/contact_icons/contact_icons.eot?sj4e5c#iefix') format('embedded-opentype'),
+    url('../fonts/contact_icons/contact_icons.ttf?sj4e5c') format('truetype'),
+    url('../fonts/contact_icons/contact_icons.woff?sj4e5c') format('woff'),
+    url('../fonts/contact_icons/contact_icons.svg?sj4e5c#contact_icons') format('svg');
+  font-weight: normal; 
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-contact-"], [class*=" icon-contact-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'contact_icons' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-contact-email:before {
+  content: "\e900";
+}
+.icon-contact-phone:before {
+  content: "\e901";
+}
+.icon-contact-account:before {
+  content: "\e902";
+}
+.icon-contact-globe:before {
+  content: "\e903";
+}
